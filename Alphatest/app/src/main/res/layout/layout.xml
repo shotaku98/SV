@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounf"
+    android:padding="20dp">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/Sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+
+                android:padding="19dp"
+                android:src="@drawable/easgle"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/MI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="1dp"
+                android:drawableRight="@drawable/common_full_open_on_phone"
+                android:hint="Moblie No"
+                android:inputType="number"
+                android:maxLines="1"
+
+                android:padding="1dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff" />
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:drawableRight="@drawable/common_full_open_on_phone"
+                android:hint="Name"
+                android:inputType="text"
+                android:maxLines="1"
+
+                android:padding="1dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff" />
+
+            <Button
+                android:id="@+id/Sendo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/buttonbg"
+                android:text="Send OTP"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/Send"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ottp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/OTPTEXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:drawableRight="@drawable/common_full_open_on_phone"
+                android:hint="OTP"
+                android:inputType="text"
+                android:maxLines="1"
+
+                android:padding="1dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff" />
+
+            <Button
+                android:id="@+id/OTP"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/buttonbg"
+                android:text="Confirm OTP"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
